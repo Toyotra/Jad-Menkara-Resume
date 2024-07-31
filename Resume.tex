@@ -1,0 +1,283 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+%\usepackage{fontspec}
+\usepackage{fontawesome5}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    {\Huge \scshape Jad Menkara} \\ \vspace{1pt}
+    \small \faPhone \vspace{1pt} 226-758-7556 $|$ \faEnvelope \vspace{1pt} \href{mailto:x@x.com}{\underline{jadmenkara@gmail.com}} $|$  \faLinkedin \vspace{1pt}
+    \href{https://linkedin.com/in/...}{\underline{linkedin.com/in/jad-menkara-1593942aa}} %$|$
+    %\href{https://github.com/...}{\underline{github.com/jake}}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Vincent Massey Secondary School}{\textbf {Sep 2022 - Jun 2026}}
+      {Honour Roll w/Distinction, 4.0 GPA}{Windsor, ON, Canada}
+    %\resumeSubheading
+    %  {Blinn College}{Bryan, TX}
+    %  {Associate's in Liberal Arts}{Aug. 2014 -- May 2018}
+  \resumeSubHeadingListEnd
+
+
+
+%---------SKILLS----------------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Java, Python, C/C++, JavaScript, HTML/CSS, Kotlin} \\
+     \textbf{Software}{: Fusion 360, Autocad, Inventor, EasyEDA, KiCAD, Autodesk CFD, Unity, Figma, Davinci Resolve, Cura} \\
+     \textbf{Technologies}{: React} \\
+     \textbf{Other}{: Soldering, 3D printing, Calculus/Vectors}
+     
+    }}
+ \end{itemize}
+
+
+
+ 
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Chapter President}{\textbf {May 2024 -- Present}}
+      {Hack Club}{Vincent Massey Secondary School}
+      \resumeItemListStart
+        \resumeItem{Currently developing lesson plans in PCB Design, CAD software, kinematics, and other engineering concepts to prepare students for hackathon competitions}
+        \resumeItem{Currently designing media and merchandise through Figma design software for social media advertising}
+      \resumeItemListEnd
+      
+% -----------Multiple Positions Heading-----------
+%    \resumeSubSubheading
+%     {Software Engineer I}{Oct 2014 - Sep 2016}
+%     \resumeItemListStart
+%        \resumeItem{Apache Beam}
+%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+%     \resumeItemListEnd
+%    \resumeSubHeadingListEnd
+%-------------------------------------------
+
+    \resumeSubheading
+      {2x Canada Wide Science Fair Finalist}{\textbf {May 2022, May 2023}}
+      {Youthscience Canada}{Fredrickton, NB $|$ Edmonton, AB}
+      \resumeItemListStart
+        \resumeItem{Selected twice as one of 400 national finalists for the development of scientific research as a young scientist}
+        \resumeItem{Received \$2000 to cover travel costs and participation fees}
+    \resumeItemListEnd
+
+%    \resumeSubheading
+%      {Artificial Intelligence Research Assistant}{May 2019 -- July 2019}
+%      {Southwestern University}{Georgetown, TX}
+%      \resumeItemListStart
+%        \resumeItem{Explored methods to generate video game dungeons based off of \emph{The Legend of Zelda}}
+%        \resumeItem{Developed a game in Java to test the generated dungeons}
+%        \resumeItem{Contributed 50K+ lines of code to an established codebase via Git}
+ %       \resumeItem{Conducted  a human subject study to determine which video game dungeon generation technique is enjoyable}
+ %       \resumeItem{Wrote an 8-page paper and gave multiple presentations on-campus}
+%        \resumeItem{Presented virtually to the World Conference on Computational Intelligence}
+ %     \resumeItemListEnd
+ \resumeSubheading
+      {Co-President}{\textbf {Aug 2023 -- Present}}
+      {Massey Game Jam}{Vincent Massey Secondary School}
+      \resumeItemListStart
+          \resumeItem{Hosted a competition to enrich students' understanding and love for computer science and game development}
+        \resumeItem{Created media and logo design for social media advertising in Figma design software}       
+%        \resumeItem{Contacted over 40 videogame companies to sponsor prizes for winners}
+        
+    \resumeItemListEnd
+
+    
+
+    \resumeSubheading
+      {Media Head Executive}{\textbf {Apr 2024 -- Present}}
+      {History Club}{Vincent Massey Secondary School}
+      \resumeItemListStart
+        \resumeItem{Designed 5+ posters, hoodies, logos, and other media through Canva and Figma design software for social media advertising}
+%        \resumeItem{Reached out to over 200 followers on Instagram to promote VMSS History Club}
+        %\resumeItem{Created a logo and designed hoodies in Figma design software}
+        \resumeItem{Increased club retention rate by over 200\% via Instagram and on-site poster advertising}
+    \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Bionic Prosthesis} $|$ \emph{Python, MicroPython, Fusion 360, EasyEDA, 3D-printing}}{\textbf {Jul 2023 -- Mar 2024}}
+          \resumeItemListStart           
+            \resumeItem{Created a modular CAD design in fusion 360 via joints and master sketch techniques}            
+%            \resumeItem{Designed a tendon driven finger actuation system via electronically controlled servo motors}
+            \resumeItem{Manufactured a novel bionic arm through 3D printing and Cura Slicing software}
+            \resumeItem{Designed and soldered a custom PCB carrying a maximum of 20 Amperes of current connected to an SZBK07 buck converter regulator module, a Raspberry Pi Pico Microcontroller, and multiple peripherals}
+          \resumeItemListEnd
+          
+      \resumeProjectHeading
+          {\textbf{Nerf Gun w/Computer Vision} $|$ \emph{Pyfirmata, Arduino, YOLOv8, Fusion 360, 3D printing}}{\textbf {Oct 2023 -- Present}}
+          \resumeItemListStart
+            \resumeItem{Designed a carriage to house and aim a gell-blaster nerf gun via servo motors using Fusion 360}
+            \resumeItem{Used a pre-trained AI model with Yolov8, Python, and Pyfirmata to track faces and aim the nerf gun accordingly}
+%            \resumeItem{Project was fully funded via VMSS Hack Club}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+
+
+%-----------PROJECTS-----------
+\section{Awards}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Windsor Regional Science Fair (WRSTEF)} }{\textbf {Mar 2022 -- Mar 2024}}
+          \resumeItemListStart           
+            \resumeItem{3x Gold Excellence Award}            
+%            \resumeItem{Designed a tendon driven finger actuation system via electronically controlled servo motors}
+            \resumeItem{3x Professional Engineers Ontario Award}
+            \resumeItem{3x An-Noor Inovation Award}
+            \resumeItem{Sanofi Biogenius Canada Award}
+            \resumeItem{Legal Focus LLP Scientific Writing Award}
+          \resumeItemListEnd
+          
+      \resumeProjectHeading
+          {\textbf{Canada Wide Science Fair (CWSF)}} {\textbf {May 2023}}
+          \resumeItemListStart
+            \resumeItem{Bronze Excellence Award: Top 60 projects in grades 9-10 nationally}
+            \resumeItem{\$3000 in university entrance scholarships}
+%            \resumeItem{Project was fully funded via VMSS Hack Club}
+          \resumeItemListEnd
+
+      \resumeProjectHeading
+          {\textbf{CEMC UWaterloo Math Contests} }{\textbf {Mar 2024}}
+          \resumeItemListStart          
+            \resumeItem{Galois Distinction Award - Top 25\% score in contest}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+
+
+
+
+
+
+
+
+%-------------------------------------------
+\end{document}
